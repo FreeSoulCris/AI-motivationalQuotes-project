@@ -27,7 +27,7 @@ h1 {
 form {
   padding: 30px;
   background-color: lavender;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   box-shadow: 5px 10px 20px rgba(39, 32, 68, 0.05);
   margin-bottom: 30px;
@@ -60,7 +60,7 @@ form {
   background-color: lavender;
   padding: 20px;
   line-height: 24px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 5px 10px 20px rgba(39, 32, 68, 0.05);
   border-left: 3px solid rgb(136, 93, 241);
 }
