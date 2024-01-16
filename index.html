@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Stoic Motivational Quotes Generator</title>
     <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,7 +13,7 @@
         <h1>Welcome to the Stoic Motivational Quotes Generator</h1>
       </header>
       <main>
-        <form action="">
+        <form action="" id="quote-generator-form">
           <input
             type="text"
             name=""
@@ -26,10 +27,7 @@
 
           <input type="submit" value="Submit" class="form-btn" />
         </form>
-        <div class="motivational-quote">
-          <p>Memento mori</p>
-          <p>Hurry up and live</p>
-        </div>
+        <div class="motivational-quote" id="quote"></div>
       </main>
 
       <footer>
