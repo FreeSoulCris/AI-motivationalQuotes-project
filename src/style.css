@@ -24,15 +24,23 @@ h1 {
   text-align: center;
 }
 
-form {
-  padding: 30px;
+form-container {
   background-color: lavender;
-  border-radius: 5px;
-  display: flex;
-  box-shadow: 5px 10px 20px rgba(39, 32, 68, 0.05);
   margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px rgba(39, 32, 68, 0.05);
+}
+form {
+  display: flex;
 }
 
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
+}
 .prompt {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
@@ -63,6 +71,27 @@ form {
   border-radius: 5px;
   box-shadow: 5px 10px 20px rgba(39, 32, 68, 0.05);
   border-left: 3px solid rgb(136, 93, 241);
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps (5, start) infinite;
 }
 
 footer {

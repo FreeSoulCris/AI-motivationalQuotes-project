@@ -20,6 +20,10 @@ function generateQuote(event) {
     "You are an awesome and acclaimed life motivational coach who love and have the mission to help and inspire people with short but powerful quotes. Make sure to follow the user prompts to answer with the most accurate quote. Please respect the user language or idiom and respond in the same language as the user prompts. At the end of the quote, it's important to Sign it with the name of the real author.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="blink">⌛Your motivational quote about <strong> ${promptInput.value} </strong> is coming..</div> `;
+
   console.log(`generating your quote, be patient :`);
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);

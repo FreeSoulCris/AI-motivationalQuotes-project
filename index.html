@@ -11,24 +11,29 @@
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to the Motivational Quote Generator</h1>
+        <h1>AI Motivational Quote Generator</h1>
       </header>
       <main>
-        <form action="" id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the motivational quote"
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            id="user-prompts"
-            value=""
-          />
+        <div class="form-container">
+          <form action="" id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of a motivational quote"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              id="user-prompts"
+              value=""
+            />
 
-          <input type="submit" value="Submit" class="form-btn" />
-        </form>
-        <div class="motivational-quote" id="quote"></div>
+            <input type="submit" value="Submit" class="form-btn" />
+          </form>
+          <div class="hint">
+            i.e: Life, Entrepreneur, Workout, Seneca or Carl Jung
+          </div>
+        </div>
+        <div class="motivational-quote hidden" id="quote"></div>
       </main>
 
       <footer>
