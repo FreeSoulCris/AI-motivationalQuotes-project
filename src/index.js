@@ -1,6 +1,6 @@
 function displayQuote(response) {
   //response.data.answer could have the response in it
-  console.log("Your quote is ready, enjoy it :)");
+
   new Typewriter("#quote", {
     strings: response.data.answer,
     autoStart: true,
@@ -23,10 +23,6 @@ function generateQuote(event) {
   let quoteElement = document.querySelector("#quote");
   quoteElement.classList.remove("hidden");
   quoteElement.innerHTML = `<div class="blink">⌛Your motivational quote about <strong> ${promptInput.value} </strong> is coming..</div> `;
-
-  console.log(`generating your quote, be patient :`);
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   // Make a call to the Api with Axios
 
